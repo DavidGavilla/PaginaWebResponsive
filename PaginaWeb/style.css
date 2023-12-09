@@ -1,0 +1,211 @@
+body, h1, h2, h3, p { 
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+    /* Utiliza la fuente Arial o una fuente genérica sin serifa si no está disponible */
+    font-family: Arial, sans-serif;
+    
+    /* Color de fondo gris claro */
+    background-color: #f0f0f0;
+    
+    /* Color del texto oscuro */
+    color: #333;
+    
+    /* Espaciado entre líneas del texto */
+    line-height: 1.6;
+    
+    /* Altura mínima del cuerpo igual al 100% de la altura visible del dispositivo */
+    min-height: 100vh;
+}
+
+/* Estilo para la sección de encabezado */
+header {
+    /* Fondo negro */
+    background-color: #333;
+    
+    /* Color del texto blanco */
+    color: #fff;
+    
+    /* Espaciado interno de 10 píxeles arriba y abajo, y centrado horizontalmente */
+    padding: 10px 0;
+    text-align: center;
+    
+    /* Estilos de diseño flexible para centrar elementos dentro del encabezado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para la sección de pie de página */
+footer{
+    /* Margen superior de 200 píxeles */
+    margin-top: 200px;
+    
+    /* Posicionamiento pegajoso al fondo de la página */
+    position: sticky;
+    top: 100%;
+}
+
+/* Estilo para el logotipo */
+.logo {
+    /* Ancho máximo del logotipo al 100% y altura automática */
+    max-width: 100%;
+    height: auto;
+    
+    /* Espaciado interno de 15 píxeles alrededor del logotipo */
+    padding: 15px;
+}
+
+/* Estilo para la barra de navegación */
+.navBar {
+    /* Elimina los estilos de lista y agrega un espacio interno de 10 píxeles arriba y abajo */
+    list-style: none;
+    padding: 10px 0;
+    
+    /* Centra los elementos de la barra de navegación horizontalmente */
+    text-align: center;
+}
+
+/* Estilo para los elementos de la barra de navegación */
+.navitem {
+    /* Margen de 10 píxeles alrededor de cada elemento */
+    margin: 10px;
+    
+    /* Elimina el subrayado de los enlaces */
+    text-decoration: none;
+    
+    /* Color del texto blanco */
+    color: #fff;
+    
+    /* Peso de fuente en negrita */
+    font-weight: bold;
+}
+
+/* Estilo para el contenedor de imágenes */
+.imgContainer {
+    /* Ancho del 95% del contenedor padre */
+    width: 95%;
+    
+    /* Centra las imágenes horizontalmente */
+    text-align: center;
+    
+    /* Margen de 20 píxeles arriba y abajo del contenedor de imágenes */
+    margin: 20px 0;
+    
+    /* Desactiva el atributo "alt" para las imágenes */
+    alt: unset;
+}
+
+/* Contenedor de juegos */
+.gameContainer {
+    display: flex;      /*Establece el modelo de diseño como contenedor flexible*/
+    flex-wrap: wrap;    /*Permite que los elementos hijos se envuelvan en múltiples líneas si es necesario*/
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Estilo de cada juego */
+.juego {
+    /* Color de fondo blanco para el elemento de juego */
+    background-color: #fff;
+    
+    /* Borde del elemento de juego con color gris claro */
+    border: 1px solid #ddd;
+    
+    /* Espaciado interno de 20 píxeles dentro del elemento de juego */
+    padding: 20px;
+    
+    /* Margen de 10 píxeles alrededor del elemento de juego */
+    margin: 10px;
+    
+    /* Centra el texto dentro del elemento de juego */
+    text-align: center;
+    
+    /* Ancho del elemento de juego al 100%, pero con un máximo de 300 píxeles */
+    width: 100%;
+    max-width: 300px;
+}
+
+
+
+.juego img {
+    /* Ancho y altura específicos para la imagen */
+    width: 275px;
+    height: 150px;
+    
+    /* Desactiva el atributo "alt" para la imagen */
+    alt: unset;
+}
+
+/* Estilo para los encabezados H2 dentro del elemento de juego */
+
+.juego h2 {
+    /* Tamaño de fuente de 1.5 rem y margen superior e inferior de 10 píxeles */
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* Estilo para los párrafos dentro del elemento de juego */
+
+.juego p {
+    /* Tamaño de fuente de 1 rem */
+    font-size: 1rem;
+}
+
+/* Estilo para los enlaces dentro del elemento de juego */
+
+.juego a {
+    /* Muestra los enlaces como bloques en línea y añade un espaciado interno de 5 píxeles */
+    display: inline-block;
+    padding: 5px;
+}
+
+/* Estilo para el elemento con ID "TitolJoc" */
+
+#TitolJoc {
+    /* Centra el texto dentro del elemento con ID "TitolJoc" */
+    text-align: center;
+}
+
+/* Elementos de diseño receptivo */
+
+/* Consultas de medios para diferentes tamaños de pantalla */
+
+@media (max-width: 768px) {
+    /* Ajusta el margen de los elementos de navegación para pantallas más pequeñas */
+    .navitem {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajusta el tamaño máximo del logo para pantallas más pequeñas */
+    .logo {
+        max-width: 80%;
+    }
+
+    /* Cambia la dirección de la fila a columna para la barra de navegación en pantallas más pequeñas */
+    .navBar {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* Ajusta el margen y el tamaño de fuente de los elementos de navegación para pantallas más pequeñas */
+    .navitem {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    /* Ajusta el margen del contenedor de juegos para pantallas más pequeñas */
+    .gameContainer {
+        margin: 10px;
+    }
+
+    /* Ajusta el ancho del elemento de juego para pantallas más pequeñas */
+    .juego {
+        width: 90%;
+    }
+}
