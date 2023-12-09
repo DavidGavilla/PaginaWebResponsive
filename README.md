@@ -63,3 +63,5 @@
 12.  _Diseño Receptivo:_
     
     -   Ajusta su diseño según el tamaño de la pantalla para una experiencia de usuario óptima en dispositivos diferentes.
+
+(En GitHub no he podido subir el video del trailer del juego, lo tienes en el .zip de la entrega)
