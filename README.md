@@ -1,7 +1,7 @@
 # Página Web responsive. David Gavilla
 **Estructura de Carpetas y Archivos:**
 
--   _Carpeta:_
+-   _Carpeta (PaginaWeb):_
     
     
     -   `main.html` (Pagina principal)
